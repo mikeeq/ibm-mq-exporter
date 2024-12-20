@@ -58,6 +58,7 @@ jobs:
 
       - name: 'Push Image'
         run: |
+          docker tag mq-metric-prometheus:5.6.1 ghcr.io/mikeeq/mq-metric-prometheus:5.6.1
           docker push ghcr.io/mikeeq/mq-metric-prometheus:5.6.1
 
       # - name: Build and push Docker image
